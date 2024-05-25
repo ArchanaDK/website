@@ -1,0 +1,331 @@
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+*{
+    font-family: "Josefin Sans", sans-serif
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+#gradient{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background: radial-gradient(41.76% 41.76% at 10% 100%, #d721ad 0%, #060814 100%);
+    filter: blur(1px);
+    /* left: 190px; */
+    bottom: -1px;
+}
+#gradient1{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background:radial-gradient(41.76% 41.76% at 57% 100%, #d7b321 0%, #060814 100%);
+    filter: blur(1px);
+    /* left: 190px; */
+    bottom: -1px;
+}
+#home{
+    background-color: #060814;
+    height: 695px;
+}
+
+.nav-list ul{
+    display: flex;
+    /* text-decoration: none; */
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+.nav-list ul a{
+    text-decoration: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+.nav-list ul a::after{
+    content: " ";
+    position: absolute;
+    margin-top: 5px;
+    height: 3px;
+    width:0;
+    
+    background: linear-gradient(76deg, cyan , orange);
+    transition: all 0.5s ease;
+}
+
+
+.nav-list ul a:hover:after{
+    width: 100%;
+}
+
+#intro-txt{
+   
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#name-txt{
+    font-size: 5rem;
+    margin: 25px 0 25px 0;
+    background: linear-gradient(113deg, white 20%, cyan 58%, orange 20%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#intro-txt button{
+    width: 190px;
+    height: 50px;
+    margin: 60px 0;
+    border-radius: 50px;
+    color: black;
+    font-size: 1.5em;
+}
+
+#intro-txt .lets-talk{
+    background: linear-gradient(98deg, #fda305, #e307e3);
+    color: white;
+}
+
+#intro-txt .lets-talk:hover{
+    background: linear-gradient(98deg, #e307e3, #fda305);
+    transition: all 2s ease-in-out;
+}
+#intro-txt .cv-btn{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+}
+
+#color-ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: color-mix(in hsl rgb(185, 27, 27), color 20, color 20);
+}
+.img{
+    position: absolute;
+    width: 300px;
+    left: 1100px;
+    top: 100px;
+    opacity: 20%;
+}
+#intro-txt .fa-bolt{
+    animation: colorchange 4s ease-in-out infinite;
+}
+
+
+/*about page*/
+
+#about #name-txt{
+    font-size: 4rem;
+    text-align: center;
+    background: linear-gradient(344deg, cyan 58%, orange 20%);
+    background-clip: text;
+}
+
+#about p{
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 0 100px;
+    margin: 40px 100px;
+}
+#about-img img{
+    object-fit: cover;
+    /* object-position: 25% 25%; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#qualification .nav-list {
+    color: black;
+}
+
+
+/*qualification page*/
+
+#table{
+text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 50px 160px;
+}
+
+#table table,th,td{
+    border: 3px solid #060814;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.heading{
+    
+    background: linear-gradient(342deg, cyan, orange);
+    font-size: 30px;
+    color: black;
+}
+table tr td{
+    font-size: 25px;
+    background-color: #0d1124;
+    padding: 30px;
+}
+
+/*contact page*/
+form{
+    border: 4px solid;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 30px;
+    border-image: linear-gradient(81deg, white, cyan, orange);
+    border-image-slice: 1;
+
+}
+
+form label{
+    font-size: 20px;
+    color: rgb(240 234 68);
+    font-weight: 500;
+}
+
+form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background:none;
+
+}
+form input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background:none;
+}
+form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background:none;
+}
+
+form input[type=text]:focus{
+    outline: none;
+    border: 2px solid orange;
+    transition: .25s ease-in;
+}
+form input[type=email]:focus{
+    outline: none;
+    border: 2px solid orange;
+    transition: .25s ease-in;
+}
+form input[type=radio]
+{
+    margin: 20px;
+}
+form input[type=checkbox]
+{
+    margin: 20px;
+}
+form select{
+    margin: 20px;
+    height: 30px;
+    background: none;
+}
+
+
+form textarea:focus{
+    outline: none;
+    border: 2px solid orange;
+    transition: .25s ease-in;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*skills page*/
+
+#circles{
+    height: fit-content;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#circles div{
+    display: flex;
+    justify-content: center;
+    /* gap: 100px; */
+    /* margin: 30px 0 0 0;
+    margin-bottom: 30px; */
+}
+
+#circles div div{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(255, 174, 0);
+}
+#circles div div{
+    border: 6px solid cyan;
+    border-image: linear-gradient(81deg, white, cyan, orange);
+    border-image-slice: 1;
+    border-radius: 50%;
+}
+#circles div div:hover{
+    width: 120px;
+    height: 120px;
+    transition: .25s ease-in-out;
+}
+
+#circles #name-txt{
+    
+}
+
+@keyframes colorchange {
+    0%{
+        color: aqua;
+    }
+    50%{
+        color: orange;
+    }
+    100%{
+        color: rgb(155, 49, 255);
+    }
+    
+}
